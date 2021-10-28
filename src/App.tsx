@@ -2,7 +2,7 @@ import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import MyNav from './components/MyNav'
 import Home from './components/Home'
-// import { BrowserRouter as Router, Route } from 'react-router-dom'
+
 import {BrowserRouter as Router, Route} from 'react-router-dom'
 import Reservations from './components/Reservations'
 import Menu from './components/Menu'

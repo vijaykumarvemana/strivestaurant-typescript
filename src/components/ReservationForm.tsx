@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { FormEvent, useEffect, useState } from 'react'
 import { Form, Button } from 'react-bootstrap'
 
 const ReservationForm = () => {
@@ -11,7 +11,7 @@ const ReservationForm = () => {
         specialRequests: ''
     })
 
-    const inputChange = (e) => {
+    const inputChange = (e:ChangeEvent<HTMLInputElement>) => {
 
         let id = e.target.id
 
@@ -24,7 +24,7 @@ const ReservationForm = () => {
     useEffect(() => {
     }, [reservation])
 
-    const submitReservation = async (e) => {
+    const submitReservation = async (e :FormEvent) => {
         e.preventDefault()
 
         try {

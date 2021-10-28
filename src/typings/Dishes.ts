@@ -6,17 +6,14 @@ interface Dishes {
     label: string
     price: string
     description: string
-    comments: [
-
-        {
-          id: number
-          rating: number
-          comment: string
-          author: string
-          date: string
-        }
-    ]
-    
+    comments: Comment
+   
 }
-    
+interface Comment{
+    id: number
+    rating: number
+    comment: string
+    author: string
+    date: string
+}
 export default Dishes

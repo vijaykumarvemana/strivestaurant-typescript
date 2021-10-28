@@ -8,8 +8,29 @@ interface title{
   title:string
 }
 
+  interface Dishe {
+    id: number
+    name: string
+    image: string
+    category: string
+    label: string
+    price: string
+    description: string
+    comments: {
+
+      id: number
+      rating: number
+      comment: string
+      author: string
+      date: string
+  
+    }
+
+    
+}
+
 const Home = ({ title }:title) => {
-  const [selected, setSelected] = useState<Dishes[] | null>(null)
+  const [selected, setSelected] = useState<Dishe | null>(null)
 
   return (
     <Container>

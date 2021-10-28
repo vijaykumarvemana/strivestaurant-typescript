@@ -9,9 +9,28 @@ interface comments{
           author: string
           date: string
     
+}  interface Dishe {
+    id: number
+    name: string
+    image: string
+    category: string
+    label: string
+    price: string
+    description: string
+    comments: [{
+
+      id: number
+      rating: number
+      comment: string
+      author: string
+      date: string
+  
+    }]
+
+    
 }
 
-const DishComments = ({ selectedPasta }:comments[]) => (
+const DishComments = ({ selectedPasta }:Dishe) => (
     <Container>
         <Row className="justify-content-center mt-3">
             <Col xs={12} md={6}>
