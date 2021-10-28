@@ -1,6 +1,17 @@
 import { Container, Row, Col, ListGroup } from "react-bootstrap"
+import Dishes from "../typings/Dishes"
 
-const DishComments = ({ selectedPasta }) => (
+interface comments{
+        
+          id: number
+          rating: number
+          comment: string
+          author: string
+          date: string
+    
+}
+
+const DishComments = ({ selectedPasta }:comments[]) => (
     <Container>
         <Row className="justify-content-center mt-3">
             <Col xs={12} md={6}>
